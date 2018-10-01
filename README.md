@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[google](https://google.com)
+[Hey here are all of my files for HW1](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW1)
 
 You can use the [editor on GitHub](https://github.com/launiadavis/launiadavis.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
