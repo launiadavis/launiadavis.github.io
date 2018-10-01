@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,700);
+
+/* media quaries -- from w3 newbie tutorial*/
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 576px){
+
+}
+
+.commhead {
+    text-align: center;
+    color: rgb(20, 120, 190)
+}
+
+p{
+     text-align: center;
+     color: black;
+}
+
+.containerOne, h3 {
+    text-align: center;
+    background-color: rgb(139, 204, 247);
+}
+
+/*ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(250, 210, 60);
+}*/
+li{
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(190, 200, 200);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+/* Notes for device sizes
+
+    Extra small (xs) devices that are less than 576px
+    No media query, this is a defaul for bootstrap
+    
+    Small (sm) devices that are 576px and up
+    @media (min-width: 576px) {...}
+
+    Medium (md) devices that are 768px and up
+    @media (min-width: 768px) {...}
+
+    Large (lg)devices that are 992px and up
+    @media (min-width: 992px) {...}
+*/
