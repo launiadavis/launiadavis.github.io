@@ -7,6 +7,6 @@ Click [here](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW
 
 ### Homework
 Homework 1 [Blog]
-Homework 1 [Demo](https://github.com/launiadavis/launiadavis.github.io/blob/master/HW1/HW1.html)
+Homework 1 [Demo](https://launiadavis.github.io/HW1/HW1.html)
 
 
