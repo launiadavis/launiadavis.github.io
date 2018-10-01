@@ -1,6 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to my portfolio!
+In this portfolio is a collection of all homework assignments for the first of three Senior Capstone courses.
 
-[Hey here are all of my files for HW1](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW1)
+# About me
+I am a student at Western Oregon University working on a double degree in Computer Science and Visual Communications Design.
+
+# Code Repository
+Click [here](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW1) to see all code for CS460
+
+
 
 You can use the [editor on GitHub](https://github.com/launiadavis/launiadavis.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
