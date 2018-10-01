@@ -6,7 +6,7 @@ In this portfolio is a collection of all homework assignments for CS460: Softwar
 Click [here](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW1) to see all code for CS460 assignments.
 
 ### Homework
-Homework 1 [Blog]  
+Homework 1 [Blog](https://launiadavis.github.io/HW1/HW1blog.html)  
 Homework 1 [Demo](https://launiadavis.github.io/HW1/HW1.html)
 
 
