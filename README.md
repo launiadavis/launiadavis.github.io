@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[google](google.com)
+[google](https://google.com)
 
 You can use the [editor on GitHub](https://github.com/launiadavis/launiadavis.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
