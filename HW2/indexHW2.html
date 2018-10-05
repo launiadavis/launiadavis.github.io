@@ -1,0 +1,76 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+            <!-- JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            
+            <!-- link to my css page -->
+            <link rel="stylesheet" type="text/css" href="HW2style.css">
+
+            <title>On Time! - Assignment Tracker</title>
+        </head>
+
+
+        <body>
+            <!-- Creating a container / header and description of site purpose-->
+            <div class="contianer fluid">
+                <h1 class="header1">On Time!<img src="Notepad.png" alt="image, Notepad by Panda Icons from the Noun Project" width="42px" height="42px"></h1>
+                <h5>The personal assignment tracker that helps you stay on track. Never again miss a 
+                    due date for your assignments!</h5>
+                <p>Enter in your class name, the assignment name and the due date for that assignment in the form below.</p>
+            </div>
+
+            <!-- Form for text input from users -->
+            <!-- followed through some Bootstrap documentations for following code section -->
+            <form>
+                <div class="form-group row">
+                    <ul>
+                    <!-- input for class name -->
+                    <li>
+                    <div class="col-12"> 
+                        <label for="logYourClass">Class Name</label>
+                        <input type="className" class="form-control" id="className" aria-describedby="classHelp" placeholder="ex: CS 3XX">
+                    </div>
+                    </li>
+                    <br>
+                    <!-- input for assignment name -->
+                    <li>
+                    <div class="col-12">
+                        <label for="logYourAssign">Assignment Name</label>
+                        <input type="assignName" class="form-control" id="assignName" aria-describedby="assignHelp" placeholder="ex: Lab #1">
+                    </div>
+                    </li>
+                    <br>
+                    <!-- input for due date -->
+                    <li>
+                    <div class="col-12">
+                        <label for="logYourDueDate">Due Date</label>
+                        <input type="dueDate" class="form-control" id="dueDate" aria-describedby="dueDateHelp" placeholder="mm/dd/yyyy">
+                    </div>
+                    </li>
+                    <br>
+                    <!-- submit button -->
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </ul>
+                </div>
+            </form>
+
+
+
+        </body>
+    </html>

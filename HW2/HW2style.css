@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,700);
+
+
+/* RESPONSIVE BREAKPOINTS */
+/* small devices - phones, 576px & up */
+@media (min-width: 576px) {
+
+}
+/* medium devices - tablets, 768px & up */
+@media (min-width: 768px) {
+
+}
+/* large devices - desktops, 992px & up */
+@media (min-width: 992px) {
+
+}
+/* extra large devices - large desktop, 1200px & up */
+@media (min-width: 1200px) {
+
+}
+
+/* trying to figure out how to add padding to my container/text so that it's not 
+   on the left edge of the screen but the following didn't have an effect
+   
+container {
+    padding-left: 20px;
+}*/
