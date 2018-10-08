@@ -19,9 +19,8 @@
 
 }
 
-/* trying to figure out how to add padding to my container/text so that it's not 
-   on the left edge of the screen but the following didn't have an effect
+/* below adds padding for appealing visual layout of the website page */
    
-container {
+.header1, h5, p, h3 {
     padding-left: 20px;
-}*/
+}

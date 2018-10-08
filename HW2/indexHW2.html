@@ -18,16 +18,29 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
             
-            <!-- link to my css page -->
+            <!-- link to my css file -->
             <link rel="stylesheet" type="text/css" href="HW2style.css">
+            <!-- link to my js file-->
+            <script src="js/HW2javascript.js"></script>
 
-            <title>On Time! - Assignment Tracker</title>
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <title>On Time! Assignment Tracker</title>
+
+            <!-- manipulating background color with js -->
+            <script type = "text/javascript" language = "javascript">
+                $(document).ready(function() {
+                   $("#mainDiv").css("background-color", "yellow");
+                });
+             </script>
+
         </head>
 
 
         <body>
             <!-- Creating a container / header and description of site purpose-->
-            <div class="contianer fluid">
+            <div class="contianer fluid" id="mainDiv"> 
                 <h1 class="header1">On Time!<img src="Notepad.png" alt="image, Notepad by Panda Icons from the Noun Project" width="42px" height="42px"></h1>
                 <h5>The personal assignment tracker that helps you stay on track. Never again miss a 
                     due date for your assignments!</h5>
@@ -36,14 +49,15 @@
 
             <!-- Form for text input from users -->
             <!-- followed through some Bootstrap documentations for following code section -->
-            <form>
-                <div class="form-group row">
+            <form id="addAssign">
+                <div class="addAssignment">
                     <ul>
                     <!-- input for class name -->
                     <li>
                     <div class="col-12"> 
                         <label for="logYourClass">Class Name</label>
-                        <input type="className" class="form-control" id="className" aria-describedby="classHelp" placeholder="ex: CS 3XX">
+                        <br>
+                        <input type="text" id="className" placeholder="ex: CS1XX">
                     </div>
                     </li>
                     <br>
@@ -51,7 +65,8 @@
                     <li>
                     <div class="col-12">
                         <label for="logYourAssign">Assignment Name</label>
-                        <input type="assignName" class="form-control" id="assignName" aria-describedby="assignHelp" placeholder="ex: Lab #1">
+                        <br>
+                        <input type="text" id="assignName" placeholder="ex: Lab #1">
                     </div>
                     </li>
                     <br>
@@ -59,16 +74,20 @@
                     <li>
                     <div class="col-12">
                         <label for="logYourDueDate">Due Date</label>
-                        <input type="dueDate" class="form-control" id="dueDate" aria-describedby="dueDateHelp" placeholder="mm/dd/yyyy">
+                        <br>
+                        <input type="text" id="dueDate" placeholder="mm/dd/yyyy">
                     </div>
                     </li>
                     <br>
                     <!-- submit button -->
                     <br>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary submitBtn">Submit</button>
                     </ul>
                 </div>
             </form>
+
+            <h3>Assignment Log</h3>
+            <p><i>You have no assignments due.</i></p>
 
 
 
