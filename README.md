@@ -9,5 +9,5 @@ Click [here](https://github.com/launiadavis/launiadavis.github.io/tree/master/HW
 Homework 1 [Blog](https://launiadavis.github.io/HW1/HW1blog.html)  
 Homework 1 [Demo](https://launiadavis.github.io/HW1/HW1.html)
 
-Homework 2 [Blog](https://launiadavis.github.io/HW2/HW2blog.html)
+Homework 2 [Blog](https://launiadavis.github.io/HW2/HW2blog.html)  
 Homework 2 [Demo](https://launiadavis.github.io/HW2/indexHW2.html)
