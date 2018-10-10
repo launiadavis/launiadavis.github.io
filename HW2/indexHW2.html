@@ -21,14 +21,14 @@
             <!-- link to my css file -->
             <link rel="stylesheet" type="text/css" href="HW2style.css">
             <!-- link to my js file-->
-            <script src="js/HW2javascript.js"></script>
+            <script src="HW2javascript.js"></script>
 
             <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
             <title>On Time! Assignment Tracker</title>
 
-            <!-- manipulating background color with js -->
+            <!-- manipulating background color with js inside html file -->
             <script type = "text/javascript" language = "javascript">
                 $(document).ready(function() {
                    $("#mainDiv").css("background-color", "yellow");
@@ -86,10 +86,11 @@
                 </div>
             </form>
 
+            <!-- Below is the Assignment Log section, each entry will be listed under here-->
             <h3>Assignment Log</h3>
-            <p><i>You have no assignments due.</i></p>
-
-
+            <div class = "myAssign">
+                <p id="topLog"><i>You have no assignments due.</i></p>
+            </div>
 
         </body>
     </html>
