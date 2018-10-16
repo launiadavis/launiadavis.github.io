@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+// Single linked node class
 namespace HW3_LDavis
 {
     public class Node<T>
@@ -12,8 +13,8 @@ namespace HW3_LDavis
 
         public Node(T data, Node<T> next)
         {
-            this.Data = data;
-            this.Next = next;
+            this.data = data;
+            this.next = next;
         }
     }
 }
