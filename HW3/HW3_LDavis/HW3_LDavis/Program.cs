@@ -27,6 +27,44 @@ namespace HW3_LDavis
                 // Print first element of the queue
                 StringBuilder sb = x.Pop();
                 output.AddLast(sb.toString());
+
+                // Make a copy
+                StringBuilder sbc = new StringBuilder(sbc.toString());
+
+                // Left child
+                sb.Append('0');
+                x.Push();
+                // Right child
+                sbc.Append('1');
+                x.Push();
+                // Decrement n by one
+                n--;
+            }
+            return output;
+
+            // Driver program that will test the above function
+            static void main(String[] args)
+            {
+                int n = 10;
+                if (args.Length < 1)
+                {
+                    Console.WriteLine("Please invoke with the max value to print binary up to, like this: ");
+                    Console.WriteLine("\t Main 12");
+                    return;
+                }
+                try
+                {
+                    n = Int32.Parse(args[0]);
+                }
+                catch
+                {
+                    Console.WriteLine("I'm sorry, I can't understand the number: " + args[0]);
+                    return;
+                }
+
+                LinkedList<string> output = main.generateBinaryRepresentation(n);
+                // Print it right justified with the longest string as the last one
+                int maxLength = output.GetLast()
             }
         }
     }
