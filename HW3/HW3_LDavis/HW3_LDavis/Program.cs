@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace HW3_LDavis
 {
@@ -19,24 +20,24 @@ namespace HW3_LDavis
             }
 
             // Enqueue the first binary number
-            x.push(new StringBuilder("1"));
+            x.Push(new StringBuilder("1"));
 
             // BFS
             while (n-- > 0) // decrement n by 1
             {
                 // Print first element of the queue
                 StringBuilder sb = x.Pop();
-                output.AddLast(sb.toString());
+                output.AddLast(sb.ToString());
 
                 // Make a copy
-                StringBuilder sbc = new StringBuilder(sbc.toString());
+                StringBuilder sbc = new StringBuilder(sbc.ToString());
 
                 // Left child
                 sb.Append('0');
-                x.Push();
+                x.Push(sb);
                 // Right child
                 sbc.Append('1');
-                x.Push();
+                x.Push(sbc);
                 // Decrement n by one
                 n--;
             }
@@ -62,9 +63,17 @@ namespace HW3_LDavis
                     return;
                 }
 
-                LinkedList<string> output = main.generateBinaryRepresentation(n);
+                LinkedList<string> output = generateBinaryRepresentation(n);
                 // Print it right justified with the longest string as the last one
-                int maxLength = output.GetLast()
+                int maxLength = output.Count();
+                foreach(string s in output)
+                {
+                    for (int i = 0; i < maxLength - s.Length; i++)
+                    {
+                        Console.WriteLine(" ");
+                    }
+                    Console.WriteLine(s);
+                }
             }
         }
     }
