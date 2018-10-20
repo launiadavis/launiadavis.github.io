@@ -12,5 +12,5 @@ Homework 1 [Demo](https://launiadavis.github.io/HW1/HW1.html)
 Homework 2 [Blog](https://launiadavis.github.io/HW2/HW2blog.html)  
 Homework 2 [Demo](https://launiadavis.github.io/HW2/indexHW2.html)
 
-Homework 3 [Blog](https://launiadavis.github.io/HW3/HW3blog.md)  
-Homework 3 [Demo](https://launiadavis.github.io/HW3/HW3demo.md)  
+Homework 3 [Blog](https://launiadavis.github.io/HW3/HW3blog)  
+Homework 3 [Demo](https://launiadavis.github.io/HW3/HW3demo)  
