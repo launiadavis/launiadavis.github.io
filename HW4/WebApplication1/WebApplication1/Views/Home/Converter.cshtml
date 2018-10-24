@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Convert Miles to Metric";
+}
+<h2>@ViewBag.Title.</h2>
+
+<div class="row">
+    <form>
+        <!-- creation of textbox -->
+        <div class="col-md-6 form-group">
+            <label for="input">Miles</label>
+            <input type="number" class="layout-form" id="input" step=".01" name="miles" placeholder="What's your milage?" required />
+        </div>
+
+        <!-- creation of radio buttons -->
+        <div class="col-md-6 form-group">
+            <div>
+                <input type="radio" name="metric" value="millimeters" />
+                <label class="form-check-label">millimeters</label>
+            </div>
+            <div>
+                <input type="radio" name="metric" value="centimeters" />
+                <label class="form-check-label">centimeters</label>
+            </div>
+            <div>
+                <input type="radio" name="metric" value="meters" />
+                <label class="form-check-label">meters</label>
+            </div>
+            <div>
+                <input type="radio" name="metric" value="kilometers" />
+                <label class="form-check-label">kilometers</label>
+            </div>
+            <!-- created submit button to start conversion -->
+            <button class="btn btn-primary" type="submit" value="Convert">Convert!</button>
+        </div>
+
+    </form>
+
+    <!-- goes to HomeController and displays message under public ActionResult Converter() -->
+    <h2>@ViewBag.Message</h2>
+        
+   
+    
+</div>
+
