@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CS 460 Homework 5</h1>
+    <p class="lead">
+        The objective for this assignment is to be able to write a MVC web application that uses a simple one-table local
+        database. This assignment will take form in a web app that can be used by tennants and landlords. Where tennants can submit
+        in a request (for maintenance) to their landlord and then the landlord can view a table (containing the database)
+        of each request that was submitted alomg with its corresponding data for each request.
+    </p>
+    <p><a href="http://www.wou.edu/~morses/classes/cs46x/assignments/HW5_1819.html" class="btn btn-primary btn-lg">Read More &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Need to make a request?</h2>
+        <p>
+            Tennants can submit a request to their management through this section of the app. We want tennants to be at ease when having
+            to go through this process. All that the tennants need to do is provide their name, apartment/unit number and a brief description
+            of the request needed.
+        </p>
+        <p><a class="btn btn-default" href="/Requests/Create">Create Request &raquo;</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Request Log</h2>
+        <p>
+            Management is given a log of all the requests that are sent in by their tennants. They can view them in order of time the request
+            was recieved and have the ability to removed request as they are completed.
+        </p>
+        <p><a class="btn btn-default" href="/Requests/Index">Request Log &raquo;</a></p>
+    </div>
+</div>
