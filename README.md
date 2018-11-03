@@ -18,5 +18,5 @@ Homework 3 [Demo](https://launiadavis.github.io/HW3/HW3demo)
 Homework 4 [Blog](https://launiadavis.github.io/HW4/HW4blog)  
 Homework 4 [Demo](https://www.youtube.com/watch?v=WVQW6fliKpY&feature=youtu.be)  
 
-Homework 5 [Blog]  
+Homework 5 [Blog](https://launiadavis.github.io/HW5/HW5blog)  
 Homework 5 [Demo](https://www.youtube.com/watch?v=HeEioewLoNU&feature=youtu.be)
