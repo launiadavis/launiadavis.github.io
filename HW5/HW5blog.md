@@ -112,4 +112,4 @@ Here I am entering in Keys (FirstName, LastName, etc) and Values into Postman.
   ![Image of entering Keys and Values in Postman](Postman1.png)  
 
 Then after pressing "Send", here is the post result (Sue Davis at the bottom) on the web page in Postman.
-![Image shows post result in Postman]Postman2.png)  
+![Image shows post result in Postman](Postman2.png)  
