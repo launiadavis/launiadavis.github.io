@@ -1,0 +1,193 @@
+﻿@model Hmwrk6.Models.ViewModels.DisplayModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@* calling the function of the Model we are using
+   need to make sure that the model folder is being referenced 
+   this will link the folder models and use the one that was built inside of the ViewModel folder to run the queries of Person*@
+
+<h2>Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <div class="person">
+        <h3>Person</h3>
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.FullName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.FullName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.PreferredName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.PreferredName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.PhoneNumber)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.PhoneNumber)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.FaxNumber)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.FaxNumber)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.EmailAddress)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.EmailAddress)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.Photo)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.Photo)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MyPerson.ValidFrom)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MyPerson.ValidFrom)
+            </dd>
+        </dl>
+    </div>
+
+    @if (ViewBag.Isp)
+    {
+        @*customer information*@
+        <div class="customer">
+            <h3>Customer</h3>
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MyCustomer.CustomerName)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MyCustomer.CustomerName)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MyCustomer.PhoneNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MyCustomer.PhoneNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MyCustomer.FaxNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MyCustomer.FaxNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MyCustomer.WebsiteURL)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MyCustomer.WebsiteURL)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MyCustomer.ValidFrom)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MyCustomer.ValidFrom)
+                </dd>
+            </dl>
+        </div>
+
+        @*gross sales and gross profits*@
+        <div class="purchases">
+            <h3>Purchases</h3>
+            <dl>
+                <dt>
+                    @Html.Label("order count", "Orders: ")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model =>model.MyCustomer.Orders.Count)
+                </dd>
+                <dt>
+                    @Html.Label("gross sales","Gross Sales: ")
+                </dt>
+                <dd>
+                    @string.Format("{0:C}", ViewBag.GrossSales)
+                </dd>
+                <dt>
+                    @Html.Label("gross profit", "Gross Profit: ")
+                </dt>
+                <dd>
+                    @string.Format("{0:C}", ViewBag.GrossProfit)
+                </dd>
+            </dl>
+        </div>
+
+        @*all products that were sold that were sold by a certain seller/person/someone*@
+        <div class="products">
+            <h3>Products Sold</h3>
+            <table>
+                <thread>
+                    <tr>
+                        <th>
+                            @Html.Label("stock item", "Stock Item")
+                        </th>
+                        <th>
+                            @Html.Label("description", "Description")
+                        </th>
+                        <th>
+                            @Html.Label("line profit", "Profit")
+                        </th>
+                        <th>
+                            @Html.Label("sale person", "Sales Person")
+                        </th>
+                    </tr>
+                </thread>
+
+                @foreach(var product in Model.MyInvoiceLine)
+                {
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(item => product.StockItem)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(item => product.Description)
+                            </td>
+                            <td>
+                                @string.Format("{0:C}", product.LineProfit)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(item => product.Invoice.Person4.FullName)
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+    }
+
+    <div class="col-md-5">
+        <div id="map" style="height: 180px"></div>
+        <script>
+            var long = @Model.MyCustomer.DeliveryLocation.Longitude;
+            var lat = @Model.MyCustomer.DeliveryLocation.Latitude;
+            var map = L.map('map').setView([lat, long], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap'</a> contributors'}).addTo(map);
+
+            L.marker([51.1, -0.09]).addTo(map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
+
+        </script>
+    </div>
+
+    <div class="col-md-3"></div>
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+
+</table>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Hmwrk6.Models.Person>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <h1 id="title">Client Search</h1>
+    <div class="container-fluid">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-inline" }))
+        {
+            <div class="input-group">
+                <span class="input-group-btn">
+                    @Html.TextBox("query", null, new { @class = "form-control" })
+                    <button class="btn btn-primary" type="submit" id="formbtn">Search</button>
+                </span>
+            </div>
+            if (ViewBag.show)
+            {
+                if (Model.Count() == 0)
+                {
+                    <h4>This client doesn't exists.</h4>
+                }
+                else
+                {
+                    foreach (var person in Model)
+                    {
+                        <div>
+                            <a class="text-info" href="Home/Details/@person.PersonID" role="button">@person.FullName (@person.PreferredName)</a>
+                        </div>
+                    }
+                }
+            }
+        }
+
+    </div>
+</div>
