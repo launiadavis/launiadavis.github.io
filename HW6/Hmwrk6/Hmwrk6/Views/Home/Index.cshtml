@@ -12,6 +12,7 @@
     <div class="container-fluid">
         @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-inline" }))
         {
+            // creating text input form
             <div class="input-group">
                 <span class="input-group-btn">
                     @Html.TextBox("query", null, new { @class = "form-control" })
@@ -20,15 +21,16 @@
             </div>
             if (ViewBag.show)
             {
-               
                 if (Model.Count() == 0)
                 {
                     <h4>This client doesn't exists.</h4>
                 }
                 else
                 {
+                    // foreach statement will look through data and find a person that 
+                    // has a section of the text that was entered in for search
                     foreach (var person in Model)
-                    {
+                        {
                         <div>
                             <a class="text-info" href="Home/Details/@person.PersonID" role="button">@person.FullName (@person.PreferredName)</a>
                         </div>

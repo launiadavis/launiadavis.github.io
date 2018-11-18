@@ -24,6 +24,7 @@ namespace Hmwrk6.Controllers
             }
             else
             {
+                // display name results in a list
                 ViewBag.show = true;
                 return View(db.People.Where(x => x.FullName.ToUpper().Contains(query.ToUpper())).ToList());
             }
