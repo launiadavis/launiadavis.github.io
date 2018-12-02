@@ -22,4 +22,4 @@ Homework 5 [Blog](https://launiadavis.github.io/HW5/HW5blog)
 Homework 5 [Demo](https://www.youtube.com/watch?v=HeEioewLoNU&feature=youtu.be)
 
 Homework 6 [Blog](https://launiadavis.github.io/HW6/HW6blog)  
-Homework 6 Demo - *in progress*
+Homework 6 [Demo](https://youtu.be/D6MII51K6-4)  
