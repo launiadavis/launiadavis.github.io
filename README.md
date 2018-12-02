@@ -27,5 +27,5 @@ Homework 6 [Demo](https://youtu.be/D6MII51K6-4)
 Homework 7 Blog - TBA  
 Homework 7 Demo - TBA  
 
-Homework 8 Blog - TBA  
+Homework 8 [Blog](https://launiadavis.github.io/HW8/HW8blog)  
 Homework 8 Demo - TBA  
