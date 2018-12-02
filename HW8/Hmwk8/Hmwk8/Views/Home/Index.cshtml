@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Hmwk8.Models.Bid>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Reginald's Ancient Antiquities Auction House</h1>
+    <p class="lead">This site allows for the sale of ancient antiquities. Buyers and sellers can interact by posting items for autction and placing bids on items.</p>
+</div>
+
+<p><a class="btn btn-default" @Html.ActionLink("Bid on an Item!", "Create", "Bids")</a></p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Item.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Item.ItemNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Buyer.BuyerNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BidPRICE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BidTIMESTAMP)
+        </th>
+    </tr>
+
+    @foreach (var bid in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayFor(item => bid.Item.ID)
+            </th>
+            <th>
+                @Html.ActionLink(bid.Item.ItemNAME, "Details", "Items", new { id = bid.ItemID}, null)
+            </th>
+            <th>
+                @Html.DisplayFor(item => bid.Buyer.BuyerNAME)
+            </th>
+            <th>
+                @Html.DisplayFor(item => bid.BidPRICE)
+            </th>
+            <th>
+                <!-- Check to see if timestamp matches the present date or not.-->
+                <!-- If is does only show the time and not the present date. If not, include the date with time -->
+                @if (bid.BidTIMESTAMP.Date == DateTime.Today)
+                {
+                    @(string.Format("{0:T}", bid.BidTIMESTAMP))
+                }
+                else
+                {
+                    @Html.DisplayFor(item => bid.BidTIMESTAMP)
+                }
+            </th>
+            
+
+        </tr>
+
+    }
+
+
+</table>   

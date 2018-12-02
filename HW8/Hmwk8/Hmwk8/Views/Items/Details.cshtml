@@ -1,0 +1,83 @@
+﻿@model Hmwk8.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        @*this is ajax*@
+        <dt>
+            <input type="hidden" id="listing-id" value="@Model.ID" /> 
+            @*getting the id of the bid so there can be access*@
+        </dt>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seller.SellerNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seller.SellerNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemDESCRIPTION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemDESCRIPTION)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h4>Bid on Items</h4>
+        
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            Bider
+        </th>
+        <th>
+            Bid Amount
+        </th>
+    </tr>
+</table>
+
+@*display message if no bids on item*@
+<h4 id="message" style="text-align:center"></h4>
+<br />
+@*js script to be executed*@
+
+@section BidScript
+{
+    <script type="text/javascript" src="~/Scripts/UpdateBid.js"></script>
+}

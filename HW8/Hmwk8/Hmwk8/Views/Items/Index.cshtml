@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Hmwk8.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Item Details and Bids</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("ID")
+        </th>
+        <th>
+            @Html.DisplayName("Item Name")
+        </th>
+        <th>
+            @Html.DisplayName("Item Description")
+        </th>
+        <th>
+            @Html.DisplayName("Seller Name")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemDESCRIPTION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seller.SellerNAME)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </td>
+    </tr>
+}
+
+</table>
