@@ -107,4 +107,4 @@ This code below checks to see if the date matches the present day or is a date e
     }
 </th>
 ```  
-
+For the AJAX/JSON section I recieved some helped form Manuel once again for this assignment.  (It's not one of my strengths)
