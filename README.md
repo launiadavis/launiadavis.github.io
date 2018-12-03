@@ -24,7 +24,7 @@ Homework 5 [Demo](https://www.youtube.com/watch?v=HeEioewLoNU&feature=youtu.be)
 Homework 6 [Blog](https://launiadavis.github.io/HW6/HW6blog)  
 Homework 6 [Demo](https://youtu.be/D6MII51K6-4)  
 
-Homework 7 Blog - TBA  
+Homework 7 [Blog](https://launiadavis.github.io/HW7/HW7blog)
 Homework 7 Demo - TBA  
 
 Homework 8 [Blog](https://launiadavis.github.io/HW8/HW8blog)  
