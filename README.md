@@ -32,5 +32,6 @@ Homework 8 [Demo](https://youtu.be/bFNvu05c6Ic)
 
 Homework 9 [Blog](https://launiadavis.github.io/HW9/HW9blog)  
 
-Note links for Final:
+Note links for Final:  
 [AJAX](https://stackoverflow.com/questions/16186083/making-a-simple-ajax-call-to-controller-in-asp-net-mvc)  
+[Publishing App](https://www.c-sharpcorner.com/article/how-to-deploy-web-app-to-azure-using-visual-studio/)  
